@@ -11,6 +11,7 @@ It's a simple utility to convert list data to csv format for example
 12321           
 45612   
 78924
+
 12124
 
 
