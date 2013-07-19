@@ -1,3 +1,7 @@
+# Author : Avinash Agrawal
+# Email : avinash8526@gmail.com
+# Version : 1.0
+
 import sublime, sublime_plugin
 
 class list2csvCommand(sublime_plugin.TextCommand):
