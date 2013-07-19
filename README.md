@@ -3,7 +3,7 @@ List2CSV-Sublime-Plugin
 
 Plugin for converting lists to comma separated values
 
-what this plugin Does ?
+What this plugin Does ?
 =======================
 
 It's a simple utility to convert list data to csv format for example
