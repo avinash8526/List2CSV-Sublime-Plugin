@@ -1,6 +1,8 @@
-# Author : Avinash Agrawal
+#------------------------------------List to CSV----------------------------
+# Author: Avinash Agrawal 
 # Email : avinash8526@gmail.com
 # Version : 1.0
+#----------------------------------------------------------------------------
 
 import sublime, sublime_plugin
 
