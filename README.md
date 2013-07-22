@@ -38,6 +38,7 @@ For manual install
 How to use
 ----------
 
-If you have a list , select all and press ctrl+alt+, or right click on mouse and select option "Convert List To CSV"
+If you have a list , select all and press `ctrl`+`alt`+`,` or right click on mouse and select option "Convert List To CSV"
+watch a `youtube` demo on how to use it `http://www.youtube.com/watch?v=W1HLoRRxKRk`
 
 
