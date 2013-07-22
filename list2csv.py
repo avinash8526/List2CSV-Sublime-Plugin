@@ -25,6 +25,6 @@ class list2csvCommand(sublime_plugin.TextCommand):
 			for pos in positions:
 				if self.view.find('\n',pos.end()):
 					nwlnreg = self.view.find('\n',pos.end())
-					self.view.replace(edt, nwlnreg, ',\r')
+					self.view.replace(edt, nwlnreg, ',')
 		return "true"			 
 		
