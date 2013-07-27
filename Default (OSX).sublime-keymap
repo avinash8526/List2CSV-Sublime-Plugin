@@ -2,5 +2,9 @@
 	{
 		"keys": ["ctrl+alt+,"], "command": "list2csv"
 		
+	},
+	{
+		"keys": ["ctrl+alt+."], "command": "l_settings"
+		
 	}
 ]

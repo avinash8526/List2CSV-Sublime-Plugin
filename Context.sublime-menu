@@ -3,5 +3,10 @@
     	"id": "listtocsv",
     	"command": "list2csv",
     	"caption": "Convert List to CSV"
+    },
+    { 
+    	"id": "listtocsv",
+    	"command": "l_settings",
+    	"caption": "List2CSV Pattern Change"
     }
 ]
