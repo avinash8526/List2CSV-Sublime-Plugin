@@ -46,8 +46,13 @@ watch a `youtube` demo on how to use it `http://www.youtube.com/watch?v=W1HLoRRx
 
 - Advance Use (New Features added for 2.0)
 
-Change the pattern by hitting `ctrl`+`alt`+`.` , you will see input panel `{'SecondDel':'','ShowPop':'No','Separator':',','FirstDel':'','Memory':'No'}` now if you want some pattern like `"123","1234"` instead of `123,1234` then change the string as {'SecondDel':'`"`','ShowPop':'No','Separator':',','FirstDel':'`"`','Memory':'No'}. If you want to maintain the pattern for whole session change the `Memory` value from `No` to `Yes`.
-Watch youtube demo [http://www.youtube.com/watch?v=PrkrRqjUoO0 ](http://www.youtube.com/watch?v=PrkrRqjUoO0 "Youtube demo")
+Change the pattern by hitting `ctrl`+`alt`+`.` , you will see input panel `{'SecondDel':'','rowlen':'NULL','Separator':',','FirstDel':'','Memory':'No','ShowPop':'Yes'}` now if you want some pattern like `"123","1234"` instead of `123,1234` then change the string as {'SecondDel':'`"`','rowlen':'NULL','Separator':',','FirstDel':'`"`','Memory':'No','ShowPop':'Yes'}. If you want to maintain the pattern for whole session change the `Memory` value from `No` to `Yes`.
+Watch youtube demo [http://www.youtube.com/watch?v=PrkrRqjUoO0 ](http://www.youtube.com/watch?v=PrkrRqjUoO0 "Youtube demo") With new implementation now row length can be set by changing `NULL` by the row length `{'SecondDel':'','rowlen':'3','Separator':',','FirstDel':'','Memory':'No','ShowPop':'Yes'}` it will generate pattern in this format
+
+- `123,123,123`
+- `343,234,234`
+
+` A pattern of 3 entity in a row`
 
 
 License
