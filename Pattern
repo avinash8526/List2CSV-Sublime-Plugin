@@ -3,5 +3,6 @@
     "Memory": "No", 
     "SecondDel": "", 
     "Separator": ",", 
-    "ShowPop": "Yes"
+    "ShowPop": "Yes",
+    "rowlen":"NULL"
 }

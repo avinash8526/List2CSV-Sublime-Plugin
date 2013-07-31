@@ -30,7 +30,7 @@ def fileHandler(filename,mode=None):
 def on_loadP():
 	global fileHandler,pdict
 	if pdict["ShowPop"] == "Yes":
-		sublime.message_dialog("Plugin Notification :\n\nList2CSv Sublime PLugin is updated, View Read Me File for detailed info.\n\n\t\t\t\t\t \n\n\nThis popup will not open again.")	
+		sublime.message_dialog("Plugin Notification :\n\nList2CSv Sublime PLugin is updated,\nImplemented Row length enhancement View Read Me File for detailed info.\n\n\t\t\t\t\t \n\n\nThis popup will not open again.")	
 		try:
 			print os.getcwd()
 			f = open("README.md",'r')
@@ -62,17 +62,34 @@ class list2csvCommand(sublime_plugin.TextCommand):
 
 	def convertListTocsv(self,selection,edt):	
 		global pdict
-		ed = 0		
+		rowlen = pdict['rowlen']
+		print rowlen
+		ed = 0
+		t = 0		
 		positions =  self.view.lines(selection[0])
 		for times,pos in enumerate(positions):
 			ed = times+ed
 			self.view.insert(edt, pos.begin()+ed, pdict['FirstDel'])
 			self.view.insert(edt, pos.end()+ed+1, pdict['SecondDel'])	
 			ed = times+1
-		for pos in positions:	
-			if self.view.find('\n',pos.end()):
-				nwlnreg = self.view.find('\n',pos.end())
-				self.view.replace(edt, nwlnreg, pdict['Separator'])
+		sels = self.view.sel()
+		positions =  self.view.lines(sels[0])	
+		for pos in positions:
+			if rowlen != "NULL" :
+				t = t+1	
+				if self.view.find('\n',pos.end()):
+					nwlnreg = self.view.find('\n',pos.end())
+					print "t is",t,"and rowlen is",rowlen
+					if t==int(rowlen):
+						t = 0
+						continue
+					else:
+						self.view.replace(edt, nwlnreg, pdict['Separator'])
+			else:
+				if self.view.find('\n',pos.end()):
+					nwlnreg = self.view.find('\n',pos.end())
+					self.view.replace(edt, nwlnreg, pdict['Separator'])
+							
 		return "true"
 							 
 		
