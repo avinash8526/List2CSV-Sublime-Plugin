@@ -30,11 +30,8 @@ def fileHandler(filename,mode=None):
 def on_loadP():
 	global fileHandler,pdict
 	if pdict["ShowPop"] == "Yes":
-		sublime.message_dialog("Plugin Notification :\n\nList2CSv Sublime PLugin is updated,\nImplemented Row length enhancement View Read Me File for detailed info.\n\n\t\t\t\t\t \n\n\nThis popup will not open again.")	
+		#sublime.message_dialog("Plugin Notification :\n\nList2CSv Sublime PLugin is updated,\nImplemented Row length enhancement View Read Me File for detailed info.\n\n\t\t\t\t\t \n\n\nThis popup will not open again.")	
 		try:
-			print os.getcwd()
-			f = open("README.md",'r')
-			print f.read()
 			webbrowser.open("https://github.com/avinash8526/List2CSV-Sublime-Plugin/blob/master/README.md")
 		except:
 			print "Not able to open file"
