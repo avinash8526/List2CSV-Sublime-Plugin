@@ -41,7 +41,7 @@ def on_loadP():
 		pdict["ShowPop"] = "No"
 		fileHandler("Pattern",'w')
 
-on_loadP()
+#on_loadP()
 class list2csvCommand(sublime_plugin.TextCommand):
 	global fileHandler
 
